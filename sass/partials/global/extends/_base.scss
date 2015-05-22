@@ -1,0 +1,110 @@
+////////////////
+//  Navigation
+////////////////
+
+
+%base--html {
+  font-size: 125%;
+  line-height: 1.618em;
+}
+
+%base--body {
+  background: $background;
+  color: $typography-dark;
+  font-family: 'pt', $sans;
+  font-weight: normal;
+}
+
+%base--selection {
+  text-shadow: none;
+  background: rgba(map-get($color-me-badd, primary), .2);
+}
+
+%base {
+  max-width: $max-width;
+  padding: {
+    left: .5rem;
+    right: .5rem;
+  }
+  margin: 0 auto;
+}
+
+%base--a {
+  display: inline-block;
+  text-decoration: none;
+  color: tint(map-get($color-me-badd, primary), 30%);
+  &:hover {
+    color: tint(map-get($color-me-badd, primary), 10%);
+    text-decoration: underline;
+  }
+}
+
+@for $i from 1 through 6 {
+  %base--h#{$i} {
+    font-size: 3em - .5em * $i;
+  }
+}
+
+%base--header {
+  margin: 0 0 1rem;
+  padding: 0;
+  padding-top: .5rem;
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  line-height: 1em;
+  word-wrap: break-word;
+  color: $typography-dark;
+  border: none;
+  a {
+    background: none;
+
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+%base--list {
+  padding-left: 1.5rem;
+  clear: both;
+}
+
+%base--ol {
+  display: block;
+  list-style-type: decimal;
+}
+
+%base--ul {
+  list-style-type: disc;
+}
+
+%base--li {
+  display: list-item;
+}
+
+%base--first-nested-list {
+  list-style-type: circle;
+}
+
+%base--second-nested-list {
+  list-style-type: square;
+}
+
+%base--em {
+  font-style: italic;
+}
+
+%base--strong {
+  font-weight: bold;
+  display: inline-block;
+}
+
+%base--p {
+  margin: 1rem auto;
+  max-width: 680px;
+}
+
+%base--small {
+  font-size: .75em;
+}

@@ -1,0 +1,60 @@
+////////////////
+//  Navigation
+////////////////
+
+nav {
+  text-align: center;
+  margin: {
+    right: auto;
+    bottom: 14px;
+    left: auto;
+  }
+  @include breakpoint($our-big-break) {
+    margin-bottom: 72px;
+  }
+  ul {
+    @include clearfix;
+    @include transition(all 0.5s ease-in-out);
+    text-align: center;
+    @include breakpoint(max-width ($our-big-break - 1)) {
+      max-height: 0;
+      overflow: hidden;
+    }
+    li {
+      @include breakpoint(max-width ($our-big-break - 1)) {
+        padding: {
+          top: 14px;
+          bottom: 14px;
+        }
+      }
+      @include breakpoint($our-big-break) {
+        display: inline-block;
+      }
+      padding: 0 2%;
+      text-align: center;
+      a {
+        text-align: center;
+        @include breakpoint(max-width ($our-big-break - 1)) {
+          width: 100%;
+          height: 100%;
+        }
+        color: tint(map-get($color-me-badd, primary), 100%);
+        @include breakpoint($our-big-break) {
+          color: $typography-light;
+        }
+        font-size: 100%;
+        text-transform: uppercase;
+        &:hover {
+          color: tint(map-get($color-me-badd, primary), 100%);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-active {
+  margin-top: 30px;
+  max-height: 300px !important;
+  overflow: visible !important;
+}

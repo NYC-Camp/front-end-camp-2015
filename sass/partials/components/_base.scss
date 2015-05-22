@@ -1,0 +1,92 @@
+//////////////////
+//  Bases Styles
+//////////////////
+
+
+@include add-grid(12);
+@include add-gutter(1/3);
+
+* {
+  text-rendering: optimizeLegibility;
+  outline: none;
+}
+
+html {
+  @extend %base--html;
+}
+
+body {
+  @extend %base--body;
+}
+
+*::selection {
+  @extend %base--selection;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend %base--header;
+    @extend %base--h#{$i};
+  }
+}
+
+a {
+ @extend %base--a;
+}
+
+em {
+  @extend %base--em;
+}
+
+strong {
+  @extend %base--strong;
+}
+
+p {
+  @extend %base--p;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 60%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+header,
+main,
+footer {
+  @include grid-span(12, 1);
+}
+
+.header--inner-wrapper,
+.section--inner-wrapper,
+.footer--inner-wrapper {
+  @include clearfix;
+  width: 90%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.header--inner-wrapper {
+  @include clearfix;
+}
+
+.section--inner-wrapper {
+  padding: {
+    top: 20px;
+    bottom: 20px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .tba--wrapper {
+    text-align: center;
+  }
+}
+
+section {
+  min-height: 240px;
+}

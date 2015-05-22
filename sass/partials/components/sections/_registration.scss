@@ -1,0 +1,37 @@
+///////////////////
+//  Registrations
+///////////////////
+
+.registration {
+  text-align: center;
+  button {
+    @include border-radius(3px);
+    @include box-shadow(tint(map-get($color-me-badd, primary), 80%) 1px 1px 1px);
+    background-color: tint(map-get($color-me-badd, primary), 26%);
+    border: none;
+    padding: {
+      top: 10px;
+      right: 4px;
+      bottom: 10px;
+      left: 4px;
+    }
+    cursor: pointer;
+    &:hover {
+      background-color: tint(map-get($color-me-badd, primary), 20%);
+    }
+    a {
+      display: inline;
+      font-size: 1.4rem;
+      color: tint($typography-light, 100%);
+      padding: {
+        top: 10px;
+        right: 30px;
+        bottom: 10px;
+        left: 30px;
+      }
+      &:hover {
+        color: shade($typography-light, 2%);
+      }
+    }
+  }
+}

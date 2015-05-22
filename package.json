@@ -1,0 +1,14 @@
+{
+  "name": "front-end-camp",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "compass-options": "^0.1.1",
+    "browser-sync": "^2.6.9",
+    "gulp": "^3.8.11",
+    "gulp-css-target": "^0.1.0",
+    "jshint-stylish": "^1.0.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-shell": "^0.4.1"
+  }
+}
