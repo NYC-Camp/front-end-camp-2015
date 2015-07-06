@@ -540,7 +540,7 @@ header .header--event-info h1 {
   }
 }
 @media (min-width: 47.5em) {
-  .speaker--wrapper:nth-of-type(1), .speaker--wrapper:nth-of-type(4), .speaker--wrapper:nth-of-type(7), .speaker--wrapper:nth-of-type(10) {
+  .speaker--wrapper:nth-of-type(1), .speaker--wrapper:nth-of-type(4), .speaker--wrapper:nth-of-type(7), .speaker--wrapper:nth-of-type(10), .speaker--wrapper:nth-of-type(13) {
     width: 33.33333%;
     float: left;
     margin-right: -100%;
@@ -548,7 +548,7 @@ header .header--event-info h1 {
     clear: none;
     clear: right;
   }
-  .speaker--wrapper:nth-of-type(2), .speaker--wrapper:nth-of-type(5), .speaker--wrapper:nth-of-type(8), .speaker--wrapper:nth-of-type(11), .speaker--wrapper:nth-of-type(13) {
+  .speaker--wrapper:nth-of-type(2), .speaker--wrapper:nth-of-type(5), .speaker--wrapper:nth-of-type(8), .speaker--wrapper:nth-of-type(11), .speaker--wrapper:nth-of-type(14) {
     width: 33.33333%;
     float: left;
     margin-right: -100%;
@@ -556,7 +556,7 @@ header .header--event-info h1 {
     clear: none;
     clear: right;
   }
-  .speaker--wrapper:nth-of-type(3), .speaker--wrapper:nth-of-type(6), .speaker--wrapper:nth-of-type(9), .speaker--wrapper:nth-of-type(12) {
+  .speaker--wrapper:nth-of-type(3), .speaker--wrapper:nth-of-type(6), .speaker--wrapper:nth-of-type(9), .speaker--wrapper:nth-of-type(12), .speaker--wrapper:nth-of-type(15) {
     width: 33.33333%;
     float: right;
     margin-left: 0;
